@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1958C075240F87EF00C61D8A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958C074240F87EF00C61D8A /* APIManager.swift */; };
+		1958C077240F913600C61D8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958C076240F913600C61D8A /* Constants.swift */; };
+		1958C07B240FA70900C61D8A /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958C07A240FA70900C61D8A /* APIResponseModel.swift */; };
+		1958C07D240FB82E00C61D8A /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958C07C240FB82E00C61D8A /* CountryModel.swift */; };
+		1958C08D240FD01900C61D8A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958C08C240FD01900C61D8A /* APIClient.swift */; };
+		1958C08F240FD02F00C61D8A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958C08E240FD02F00C61D8A /* APIRequest.swift */; };
+		1958C091240FD05700C61D8A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1958C090240FD05700C61D8A /* APIResponse.swift */; };
+		195EAD5B240D215C00E16230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195EAD5A240D215C00E16230 /* AppDelegate.swift */; };
+		195EAD5D240D215C00E16230 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195EAD5C240D215C00E16230 /* SceneDelegate.swift */; };
+		195EAD62240D215C00E16230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195EAD60240D215C00E16230 /* Main.storyboard */; };
+		195EAD64240D216400E16230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195EAD63240D216400E16230 /* Assets.xcassets */; };
+		195EAD67240D216400E16230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195EAD65240D216400E16230 /* LaunchScreen.storyboard */; };
+		195EAD72240D216500E16230 /* SmartMosqueV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195EAD71240D216500E16230 /* SmartMosqueV2Tests.swift */; };
+		195EAD7D240D2A1300E16230 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195EAD7C240D2A1300E16230 /* LoginViewController.swift */; };
+		195EAD7F240D2A2F00E16230 /* CountrySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195EAD7E240D2A2F00E16230 /* CountrySelectionViewController.swift */; };
+		19DF9A7A2410B660002ED47B /* GetCountriesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF9A792410B660002ED47B /* GetCountriesAPI.swift */; };
+		19DF9A7C2410BEEB002ED47B /* GetCitiesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF9A7B2410BEEB002ED47B /* GetCitiesAPI.swift */; };
+		19DF9A7E2410BF5D002ED47B /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF9A7D2410BF5D002ED47B /* CityModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		195EAD6E240D216500E16230 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 195EAD4F240D215C00E16230 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 195EAD56240D215C00E16230;
+			remoteInfo = SmartMosqueV2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1958C074240F87EF00C61D8A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1958C076240F913600C61D8A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1958C07A240FA70900C61D8A /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
+		1958C07C240FB82E00C61D8A /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		1958C08C240FD01900C61D8A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		1958C08E240FD02F00C61D8A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		1958C090240FD05700C61D8A /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		195EAD57240D215C00E16230 /* SmartMosqueV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMosqueV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		195EAD5A240D215C00E16230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		195EAD5C240D215C00E16230 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		195EAD61240D215C00E16230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		195EAD63240D216400E16230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		195EAD66240D216400E16230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		195EAD68240D216400E16230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195EAD6D240D216500E16230 /* SmartMosqueV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMosqueV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		195EAD71240D216500E16230 /* SmartMosqueV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMosqueV2Tests.swift; sourceTree = "<group>"; };
+		195EAD73240D216500E16230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195EAD7C240D2A1300E16230 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		195EAD7E240D2A2F00E16230 /* CountrySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionViewController.swift; sourceTree = "<group>"; };
+		19DF9A792410B660002ED47B /* GetCountriesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesAPI.swift; sourceTree = "<group>"; };
+		19DF9A7B2410BEEB002ED47B /* GetCitiesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesAPI.swift; sourceTree = "<group>"; };
+		19DF9A7D2410BF5D002ED47B /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		195EAD54240D215C00E16230 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		195EAD6A240D216500E16230 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1958C073240F87C300C61D8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1958C07A240FA70900C61D8A /* APIResponseModel.swift */,
+				1958C07C240FB82E00C61D8A /* CountryModel.swift */,
+				19DF9A7D2410BF5D002ED47B /* CityModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1958C08B240FD00C00C61D8A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1958C074240F87EF00C61D8A /* APIManager.swift */,
+				1958C08C240FD01900C61D8A /* APIClient.swift */,
+				1958C08E240FD02F00C61D8A /* APIRequest.swift */,
+				1958C090240FD05700C61D8A /* APIResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		195EAD4E240D215C00E16230 = {
+			isa = PBXGroup;
+			children = (
+				195EAD59240D215C00E16230 /* SmartMosqueV2 */,
+				195EAD70240D216500E16230 /* SmartMosqueV2Tests */,
+				195EAD58240D215C00E16230 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		195EAD58240D215C00E16230 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				195EAD57240D215C00E16230 /* SmartMosqueV2.app */,
+				195EAD6D240D216500E16230 /* SmartMosqueV2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		195EAD59240D215C00E16230 /* SmartMosqueV2 */ = {
+			isa = PBXGroup;
+			children = (
+				19DF9A782410B644002ED47B /* APIService */,
+				1958C08B240FD00C00C61D8A /* API */,
+				1958C073240F87C300C61D8A /* Model */,
+				19666C19240F79790070447B /* Controller */,
+				195EAD5A240D215C00E16230 /* AppDelegate.swift */,
+				195EAD5C240D215C00E16230 /* SceneDelegate.swift */,
+				195EAD60240D215C00E16230 /* Main.storyboard */,
+				195EAD63240D216400E16230 /* Assets.xcassets */,
+				195EAD65240D216400E16230 /* LaunchScreen.storyboard */,
+				195EAD68240D216400E16230 /* Info.plist */,
+				1958C076240F913600C61D8A /* Constants.swift */,
+			);
+			path = SmartMosqueV2;
+			sourceTree = "<group>";
+		};
+		195EAD70240D216500E16230 /* SmartMosqueV2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				195EAD71240D216500E16230 /* SmartMosqueV2Tests.swift */,
+				195EAD73240D216500E16230 /* Info.plist */,
+			);
+			path = SmartMosqueV2Tests;
+			sourceTree = "<group>";
+		};
+		19666C19240F79790070447B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				195EAD7C240D2A1300E16230 /* LoginViewController.swift */,
+				195EAD7E240D2A2F00E16230 /* CountrySelectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19DF9A782410B644002ED47B /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				19DF9A792410B660002ED47B /* GetCountriesAPI.swift */,
+				19DF9A7B2410BEEB002ED47B /* GetCitiesAPI.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		195EAD56240D215C00E16230 /* SmartMosqueV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 195EAD76240D216500E16230 /* Build configuration list for PBXNativeTarget "SmartMosqueV2" */;
+			buildPhases = (
+				195EAD53240D215C00E16230 /* Sources */,
+				195EAD54240D215C00E16230 /* Frameworks */,
+				195EAD55240D215C00E16230 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartMosqueV2;
+			productName = SmartMosqueV2;
+			productReference = 195EAD57240D215C00E16230 /* SmartMosqueV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		195EAD6C240D216500E16230 /* SmartMosqueV2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 195EAD79240D216500E16230 /* Build configuration list for PBXNativeTarget "SmartMosqueV2Tests" */;
+			buildPhases = (
+				195EAD69240D216500E16230 /* Sources */,
+				195EAD6A240D216500E16230 /* Frameworks */,
+				195EAD6B240D216500E16230 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				195EAD6F240D216500E16230 /* PBXTargetDependency */,
+			);
+			name = SmartMosqueV2Tests;
+			productName = SmartMosqueV2Tests;
+			productReference = 195EAD6D240D216500E16230 /* SmartMosqueV2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		195EAD4F240D215C00E16230 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Rizo Corp.";
+				TargetAttributes = {
+					195EAD56240D215C00E16230 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					195EAD6C240D216500E16230 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 195EAD56240D215C00E16230;
+					};
+				};
+			};
+			buildConfigurationList = 195EAD52240D215C00E16230 /* Build configuration list for PBXProject "SmartMosqueV2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 195EAD4E240D215C00E16230;
+			productRefGroup = 195EAD58240D215C00E16230 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				195EAD56240D215C00E16230 /* SmartMosqueV2 */,
+				195EAD6C240D216500E16230 /* SmartMosqueV2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		195EAD55240D215C00E16230 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195EAD67240D216400E16230 /* LaunchScreen.storyboard in Resources */,
+				195EAD64240D216400E16230 /* Assets.xcassets in Resources */,
+				195EAD62240D215C00E16230 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		195EAD6B240D216500E16230 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		195EAD53240D215C00E16230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195EAD7D240D2A1300E16230 /* LoginViewController.swift in Sources */,
+				195EAD7F240D2A2F00E16230 /* CountrySelectionViewController.swift in Sources */,
+				1958C07D240FB82E00C61D8A /* CountryModel.swift in Sources */,
+				1958C07B240FA70900C61D8A /* APIResponseModel.swift in Sources */,
+				1958C075240F87EF00C61D8A /* APIManager.swift in Sources */,
+				1958C091240FD05700C61D8A /* APIResponse.swift in Sources */,
+				19DF9A7A2410B660002ED47B /* GetCountriesAPI.swift in Sources */,
+				195EAD5B240D215C00E16230 /* AppDelegate.swift in Sources */,
+				195EAD5D240D215C00E16230 /* SceneDelegate.swift in Sources */,
+				1958C077240F913600C61D8A /* Constants.swift in Sources */,
+				1958C08F240FD02F00C61D8A /* APIRequest.swift in Sources */,
+				19DF9A7E2410BF5D002ED47B /* CityModel.swift in Sources */,
+				19DF9A7C2410BEEB002ED47B /* GetCitiesAPI.swift in Sources */,
+				1958C08D240FD01900C61D8A /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		195EAD69240D216500E16230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195EAD72240D216500E16230 /* SmartMosqueV2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		195EAD6F240D216500E16230 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 195EAD56240D215C00E16230 /* SmartMosqueV2 */;
+			targetProxy = 195EAD6E240D216500E16230 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		195EAD60240D215C00E16230 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				195EAD61240D215C00E16230 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		195EAD65240D216400E16230 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				195EAD66240D216400E16230 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		195EAD74240D216500E16230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		195EAD75240D216500E16230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		195EAD77240D216500E16230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y77LYP5RMB;
+				INFOPLIST_FILE = SmartMosqueV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizo.SmartMosqueV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		195EAD78240D216500E16230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y77LYP5RMB;
+				INFOPLIST_FILE = SmartMosqueV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizo.SmartMosqueV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		195EAD7A240D216500E16230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y77LYP5RMB;
+				INFOPLIST_FILE = SmartMosqueV2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizo.SmartMosqueV2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMosqueV2.app/SmartMosqueV2";
+			};
+			name = Debug;
+		};
+		195EAD7B240D216500E16230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y77LYP5RMB;
+				INFOPLIST_FILE = SmartMosqueV2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rizo.SmartMosqueV2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMosqueV2.app/SmartMosqueV2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		195EAD52240D215C00E16230 /* Build configuration list for PBXProject "SmartMosqueV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195EAD74240D216500E16230 /* Debug */,
+				195EAD75240D216500E16230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		195EAD76240D216500E16230 /* Build configuration list for PBXNativeTarget "SmartMosqueV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195EAD77240D216500E16230 /* Debug */,
+				195EAD78240D216500E16230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		195EAD79240D216500E16230 /* Build configuration list for PBXNativeTarget "SmartMosqueV2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				195EAD7A240D216500E16230 /* Debug */,
+				195EAD7B240D216500E16230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 195EAD4F240D215C00E16230 /* Project object */;
+}
