@@ -22,6 +22,9 @@ struct GetCitiesAPI {
         performRequest(with: urlString)
     }
     
+    
+    // comment for mild design branch
+    
     func performRequest(with urlString: String) {
         if let url = URL(string: urlString) {
             
